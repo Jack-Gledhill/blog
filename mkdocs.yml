@@ -1,0 +1,201 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: Jack Gledhill's Blog
+site_url: https://blog.jackgledhill.com
+site_author: Jack Gledhill
+site_description: >-
+  Lorem ipsum dolor sit amet
+
+repo_url: https://github.com/Jack-Gledhill/blog
+repo_name: Jack-Gledhill/blog
+edit_uri: edit/main/docs/
+
+# Plugins and extensions used
+plugins:
+  - blog:
+      blog_dir: .
+      blog_toc: true
+      archive_toc: true
+  - rss:
+      comments_path: "#__comments"
+      match_path: posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  # Site search
+  - search
+  # Image zoom
+  - glightbox:
+      background: none
+      shadow: false
+  - tags
+  - meta
+  - social:
+      cards_layout_options:
+        logo: overrides/.icons/logo.svg
+
+# Extensions for markdown on pages
+markdown_extensions:
+  - footnotes
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - abbr
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/definitions.md
+        - includes/links.md
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+# Additional JavaScript
+extra_javascript:
+  # Used for Mathjax plugin
+  - assets/js/mathjax.js
+  # Allows sorting tables by a column
+  - assets/js/tablesort.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+  name: material
+  favicon: assets/favicon.webp
+  custom_dir: overrides
+  language: en
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+    - search.share
+    - tags
+    - announce.dismiss
+
+  palette:
+    # Automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  # Updating the icons used for certain actions
+  icon:
+    edit: material/pencil
+    view: material/eye
+    repo: fontawesome/brands/git-alt
+    annotation: material/information
+    logo: jack-gledhill/logo-mono-white
+
+extra:
+  homepage: https://jackgledhill.com # Clicking on the logo takes you to my portfolio
+  # Social media links on footer
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:me@jackgledhill.com
+    - icon: fontawesome/solid/earth-europe
+      link: https://jackgledhill.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/Jack-Gledhill
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jackgledhill
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0009-0000-3055-0714
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our blog and whether users find what 
+      they're searching for.
+  analytics:
+    provider: google
+    property: G-V7TVJH3YEP
+    feedback:
+      title: Did you enjoy this post?
+      ratings:
+        - icon: material/heart
+          name: I loved this post!
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/heart-broken
+          name: This post could be better
+          data: 0
+          note: >-
+            Thanks for letting us know!
+
+extra_css:
+  - assets/css/theme.css
+
+# Copyright notice, shown in footer
+copyright: >
+  Copyright &copy; 2025 Jack Gledhill <br />
+  <a href="#__consent"><u>Manage cookies</u></a>
+
+watch:
+  - includes
+  - overrides
