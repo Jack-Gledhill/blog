@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: Jack Gledhill's Blog
+site_name: The Unfiltered Blog
 site_url: https://blog.jackgledhill.com
 site_author: Jack Gledhill
 site_description: >-
@@ -34,6 +34,7 @@ plugins:
   - social:
       cards_layout_options:
         logo: overrides/.icons/logo.svg
+        background_color: "#1f6bcb"
 
 # Extensions for markdown on pages
 markdown_extensions:
