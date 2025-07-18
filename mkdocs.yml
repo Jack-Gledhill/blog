@@ -160,6 +160,8 @@ extra:
       link: mailto:me@jackgledhill.com
     - icon: fontawesome/solid/earth-europe
       link: https://jackgledhill.com
+    - icon: fontawesome/solid/rss
+      link: /feed_rss_created.xml
     - icon: fontawesome/brands/github
       link: https://github.com/Jack-Gledhill
     - icon: fontawesome/brands/linkedin
