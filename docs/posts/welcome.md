@@ -1,6 +1,5 @@
 ---
 draft: false
-description: "Welcome to The Unfiltered Blog: a blog about stuff and things."
 date: 2025-07-18
 authors:
   - jack
