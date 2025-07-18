@@ -1,5 +1,5 @@
-{% if page.meta.comments %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+{% if page.meta.comments %}
 <script src="https://giscus.app/client.js"
         data-repo="Jack-Gledhill/blog"
         data-repo-id="R_kgDOPOu3qg"
@@ -51,4 +51,6 @@
         })
     })
 </script>
+{% else %}
+<p><i>Sorry, comments are disabled for this post.</i></p>
 {% endif %}
