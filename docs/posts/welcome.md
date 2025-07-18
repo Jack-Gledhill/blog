@@ -3,6 +3,8 @@ draft: false
 date: 2025-07-18
 authors:
   - jack
+categories:
+  - Tutorials
 ---
 
 # Welcome to The Unfiltered Blog!
