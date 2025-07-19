@@ -15,6 +15,7 @@ plugins:
       blog_dir: .
       blog_toc: true
       archive_toc: true
+      authors_profiles: true
   - rss:
       comments_path: "#__comments"
       match_path: posts/.*
@@ -104,8 +105,6 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
