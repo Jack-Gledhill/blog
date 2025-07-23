@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 
   created: 2025-07-23T12:00:00
 authors:
