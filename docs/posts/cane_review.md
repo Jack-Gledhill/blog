@@ -1,6 +1,7 @@
 ---
 draft: false
-date: 2025-07-18
+date: 
+  created: 2025-07-18
 authors:
   - jack
 categories:
@@ -33,7 +34,7 @@ Additionally, the handle became uncomfortable to hold after long periods of use,
 It was also slightly too short, even at its maximum height, which made it uncomfortable to use a lot of the time.
 And finally, I had dented the aluminium shaft early on, meaning the end was curved slightly, which made it harder to use on uneven surfaces.
 
-![Photo of The Stick showing the dented shaft and punctured rubber tip](/assets/posts/cane_review/the_stick.webp){ width=50% }
+![Photo of The Stick showing the dented shaft and punctured rubber tip](/assets/posts/cane_review/the_stick.webp){ width=50%, loading=lazy }
 
 /// caption
 Figure 1: Damage to The Stick after over a year of use

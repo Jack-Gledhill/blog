@@ -1,6 +1,7 @@
 ---
 draft: false
-date: 2025-07-18
+date: 
+  created: 2025-07-18
 authors:
   - jack
 categories:
